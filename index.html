@@ -11,7 +11,7 @@
     <header class="header-principal">
         <div class="headertitulo">
             <a href="index.html" class="logo">
-                <img src="images/logo (2).png" alt="Logo de la pagina" class="logo-icono">                
+                <img src="images/logo.jpg" alt="Logo de la pagina" class="logo-icono">                
             </a>
             <h1>WikiGeek</h1>
          </div>
@@ -22,7 +22,7 @@
          </div>
         <!--usamos una clase buscar, para buscar las series y peliculas  -->
             <div class="buscar">
-                <input type="search" class="btn-buscar" placeholder="Buscar series, películas...">          
+                <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
             </div> 
         <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
             <nav class="inicio" aria-label="Menu principal">
@@ -33,37 +33,16 @@
                     <li><a href="#sugerencia">Sugerencias</a></li>
                     <li><a href="#milista">Mi lista</a></li>
                 </ul>
-            </nav>
-        
-        
+            </nav>       
+    </header> 
             <!-- main, informacion de la pelicula, imagenes de las peliculas que se podran ver -->
-            <main>
-                
+            <main id="peliculas" class="seccion-peliculas">      
+                    <h2 class="titulo-seccion">Películas Destacadas</h2>
+                    <div id="contenedor-peliculas" class="grid-peliculas "></div>
+                   
 
 
             </main>
-          
-
-
-
-
-
-
-
-
-
-    </header>
-
-
-
-
-
-
-
-
-
-
-       
         <footer class="footer-informacion">
             <div class="footer-acercade">
                 <a href="#">Contacto</a>
