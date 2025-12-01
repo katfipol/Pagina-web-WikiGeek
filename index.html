@@ -7,19 +7,50 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+   <!-- header principal, con el logo y titulo de nuestra pagina web --> 
     <header class="header-principal">
         <div class="headertitulo">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo de la pagina" class="logo-icono">
-                 <h1>WikiGeek</h1>
+                <img src="images/logo (2).png" alt="Logo de la pagina" class="logo-icono">                
             </a>
+            <h1>WikiGeek</h1>
          </div>
+         <!-- para que el usuario pueda iniciar sesion o registrarse -->
+         <div class="sesion">
+             <a href="login.html" class="btn-login">Iniciar Sesión</a>
+             <a href="registrar.html" class="btn-registrar">Registrarse</a>
+         </div>
+        <!--usamos una clase buscar, para buscar las series y peliculas  -->
             <div class="buscar">
-                <input type="search" class="boton-buscar" placeholder="Buscar series, películas...">
+                <input type="search" class="btn-buscar" placeholder="Buscar series, películas...">          
             </div> 
+        <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+            <nav class="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#peliculas">Películas</a></li>
+                    <li><a href="#proximamente">Próximamente</a></li>
+                    <li><a href="#sugerencia">Sugerencias</a></li>
+                    <li><a href="#milista">Mi lista</a></li>
+                </ul>
+            </nav>
+        
+        
+            <!-- main, informacion de la pelicula, imagenes de las peliculas que se podran ver -->
+            <main>
+                
+
+
+            </main>
           
 
-       
+
+
+
+
+
+
+
 
     </header>
 
@@ -32,8 +63,16 @@
 
 
 
+       
+        <footer class="footer-informacion">
+            <div class="footer-acercade">
+                <a href="#">Contacto</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Redes Sociales</a>
+            </div>
+            <p> © 2025 - Enciclopedia de películas de superhéroes</p>
 
-
+        </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
