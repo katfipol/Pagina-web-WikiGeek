@@ -36,13 +36,45 @@
             </nav>       
     </header> 
             <!-- main, informacion de la pelicula, imagenes de las peliculas que se podran ver -->
-            <main id="peliculas" class="seccion-peliculas">      
+            <main>
+                <section id="poster" class="poster_grande">
+                    <figure id="poster-div" class="poster-contenido">
+                        <div id="imagen-fondo" class="poster-imagen"></div>
+                        <figcaption class="poster-info">
+                            <h2 id="poster-titulo">Cargando pelicula destacada...</h2>
+                            <p id="poster-sinopsis" class="sinopsis-poster">...</p>
+                            <div class="btn-poster">
+                                <a href="#" id="btn-detalles" class="btn-ver-detalles">Ver detalles</a>
+                                <button id="btn-milista" class="btn-agregarlista">+ Mi lista</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <!-- seccion de peliculas destacadas -->
+                <section id="peliculas" class="seccion-peliculas">
                     <h2 class="titulo-seccion">Películas Destacadas</h2>
                     <div id="contenedor-peliculas" class="grid-peliculas "></div>
-                   
+                </section>
+                     
+
+                <!-- seccion de ultimos estrenos -->
+                 <section id="estrenos">
+                    <h2 class="titulo-seccion">Últimos Estrenos</h2>
+                    <div id="contenedor-estrenos" class="grid-peliculas"></div>
+                </section>
+
+                <!-- seccion de proximamente -->
+                 <section id="proximamente">
+                    <h2 class="titulo-seccion">Próximamente</h2>
+                    <div id="contenedor-proximamente" class="grid-peliculas"></div>
+                </section>
 
 
+                 
+                    
             </main>
+
         <footer class="footer-informacion">
             <div class="footer-acercade">
                 <a href="#">Contacto</a>
