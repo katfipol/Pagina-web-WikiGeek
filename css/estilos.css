@@ -1,0 +1,237 @@
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* ======= HEADER ======= */
+.header-principal {
+    background: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #222;
+}
+
+.logo-icono {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.headertitulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headertitulo h1 {
+    color: #ffcc00;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ======= BOTONES LOGIN ======= */
+.sesion a {
+    padding: 8px 14px;
+    margin-left: 10px;
+    background: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sesion a:hover {
+    background: #ffd940;
+}
+
+/* ======= BUSCADOR ======= */
+.buscar {
+    margin-left: 20px;
+}
+
+.btn-buscar {
+    padding: 10px;
+    width: 230px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: #fff;
+}
+
+/* ======= NAV ======= */
+.inicio ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.inicio ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.inicio ul li a:hover {
+    color: #ffcc00;
+}
+
+/* ======= POSTER PRINCIPAL ======= */
+.poster_grande {
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.poster-imagen {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    border-radius: 10px;
+}
+
+.poster-info {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    width: 45%;
+}
+
+.poster-info h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.sinopsis-poster {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.btn-poster a,
+.btn-poster button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-ver-detalles {
+    background: #ffcc00;
+    color: #111;
+    text-decoration: none;
+}
+
+.btn-ver-detalles:hover {
+    background: #ffd940;
+}
+
+.btn-agregarlista {
+    background: #222;
+    color: #fff;
+}
+
+.btn-agregarlista:hover {
+    background: #333;
+}
+
+/* ======= TÍTULOS DE SECCIÓN ======= */
+.titulo-seccion {
+    font-size: 28px;
+    margin: 30px 20px 10px;
+    color: #ffcc00;
+}
+
+/* ======= GRID DE TARJETAS ======= */
+.grid-peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ======= TARJETA DE PELÍCULA ======= */
+.tarjeta {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px #ffcc0044;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.tarjeta p {
+    color: #aaa;
+    margin: 4px 0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-buttons button {
+    width: 48%;
+    padding: 7px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.card-buttons button:hover {
+    background: #333;
+}
+
+/* ======= FOOTER ======= */
+.footer-informacion {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+.footer-acercade a {
+    margin: 0 10px;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-acercade a:hover {
+    text-decoration: underline;
+}
