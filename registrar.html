@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrase</title>
+     <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+      <!-- header principal, con el logo y titulo de nuestra pagina web --> 
+    <header class="header-principal">
+        <div class="headertitulo">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Logo de la pagina" class="logo-icono">                
+            </a>
+            <h1>WikiGeek</h1>
+         </div>
+         <!-- para que el usuario pueda iniciar sesion o registrarse -->
+         <div class="sesion">
+             <a href="login.html" class="btn-login">Iniciar Sesión</a>
+             <a href="registrar.html" class="btn-registrar">Registrarse</a>
+         </div>
+        <!--usamos una clase buscar, para buscar las series y peliculas  -->
+            <div class="buscar">
+                <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
+            </div> 
+        <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+            <nav class="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="index.html#proximamente">Próximamente</a></li>
+                    <li><a href="index.html#peliculas">Sugerencias</a></li>
+                    <li><a href="milista.html">Mi lista</a></li>
+                </ul>
+            </nav>       
+    </header> 
+        <main>
+            <section class="registro">
+                <h2>Crear una cuenta</h2>
+                <form class="form-registro">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" name="nombre" placeholder="Ingrese su nombre" required aria-required="true">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email_re" id="email_re" placeholder="Escribe tu correo electronico">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password_re" id="password_re" placeholder="Minimo 8 caractertes">
+
+                    <label for="confirmar">Confirmar contraseña</label>
+
+                    <input type="password" name="confirmar" id="confirmar" placeholder="Repita su contraseña">
+
+
+                    <fieldset>
+                        <legend>Condiciones</legend>
+                        <label>
+                        <input type="checkbox" id="terminos" required aria-required="true">
+                        Acepto los términos y condiciones de uso y política de privacidad
+                    </label>
+                    </fieldset>
+
+                    <button type="submit" class="btn-registro">Registrarse</button>
+
+                    <p class="cuentacreada">¿Ya tienes cuenta? <a href="login.html">Inicar Sesion</a></p>
+
+                </form>
+
+            </section>
+        </main>
+
+     <footer class="footer-informacion">
+            <div class="footer-acercade">
+                <a href="#">Contacto</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Redes Sociales</a>
+            </div>
+            <p> © 2025 - Enciclopedia de películas de superhéroes</p>
+
+        </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
