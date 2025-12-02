@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Películas | WikiGeek</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- header principal, con el logo y titulo de nuestra pagina web --> 
+    <header class="header-principal">
+        <div class="headertitulo">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Logo de la pagina" class="logo-icono">                
+            </a>
+            <h1>WikiGeek</h1>
+         </div>
+         <!-- para que el usuario pueda iniciar sesion o registrarse -->
+         <div class="sesion">
+             <a href="login.html" class="btn-login">Iniciar Sesión</a>
+             <a href="registrar.html" class="btn-registrar">Registrarse</a>
+         </div>
+        <!--usamos una clase buscar, para buscar las series y peliculas  -->
+            <div class="buscar">
+                <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
+            </div> 
+        <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+            <nav class="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="index.html#proximamente">Próximamente</a></li>
+                    <li><a href="#peliculas">Sugerencias</a></li>
+                    <li><a href="#milista">Mi lista</a></li>
+                </ul>
+            </nav>   
+            <main>
+               <section class="filtros">
+                <h2>Catálogo de Películas</h2>
+                <form class="form-filtros">
+                    <label for="año">Año</label>
+                    <select id="año">
+                        <option value="todos">Todos</option>
+                        <option value="2000">2000</option>
+                        <option value="2010">2010</option>
+                        <option value="2020">2020</option>
+                    </select>
+
+                    <label for="universo">Universo</label>
+                     <select id="universo">
+                        <option value="todos">Todos</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="dc">Dc comics</option>
+                    </select>
+
+                     <label for="categoria">Categoria</label>
+                     <select id="categoria">
+                        <option value="todos">Todos</option>
+                        <option value="series">Series</option>
+                        <option value="peliculas">Películas</option>
+                    </select>
+                </form>
+                </section>
+
+                <!-- seccion de listado de peliculas -->
+                <section id="listado-peliculas" class="lista-peliculas">
+                    <h2 class="titulo-listado">Listados de Películas</h2>
+                    <div id="contenedor-listado" class="grid-listado"></div>
+                </section>
+            </main>
+
+
+  <!-- Footer -->
+  <footer class="footer-informacion">
+    <div class="footer-acercade">
+      <a href="#">Contacto</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Redes Sociales</a>
+    </div>
+    <p>© 2025 - Enciclopedia de películas de superhéroes</p>
+  </footer>
+</body>
+</html>
