@@ -27,30 +27,35 @@
         <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
             <nav class="inicio" aria-label="Menu principal">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                      <li><a href="index.html">Inicio</a></li>
                     <li><a href="peliculas.html">Películas</a></li>
-                    <li><a href="#proximamente">Próximamente</a></li>
-                    <li><a href="#peliculas">Sugerencias</a></li>
+                    <li><a href="index.html#proximamente">Próximamente</a></li>
+                    <li><a href="index.html#peliculas">Sugerencias</a></li>
                     <li><a href="milista.html">Mi lista</a></li>
                 </ul>
             </nav>       
     </header> 
-
     <main>
-        
+        <section id="mi_lista">
+            <h2>Mis películas guardadas</h2>
+            <ul id="pelisguardadas" class="grid-peliculas">
+
+            </ul>
+        </section>
     </main>
 
 
 
- <footer class="footer-informacion">
-            <div class="footer-acercade">
-                <a href="#">Contacto</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Redes Sociales</a>
-            </div>
-            <p> © 2025 - Enciclopedia de películas de superhéroes</p>
-
-        </footer>
+   <footer>
+            <nav aria-label="Enlaces de pie">
+                <ul>
+                     <li><a href="acercade.html" aria-current="page">Acerca de</a></li>
+                     <li><a href="leanomercadojosemartin@gmail.com">Contacto</a></li>
+                     <li><a href="https://www.instagram.com/katfipol">Instagram</a></li>
+                </ul>
+            </nav>
+                <p>© 2025 - Enciclopedia de películas de superhéroes</p>
+            </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
