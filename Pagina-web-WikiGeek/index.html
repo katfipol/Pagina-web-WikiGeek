@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiGeek</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+   <!-- header principal, con el logo y titulo de nuestra pagina web --> 
+    <header class="header-principal">
+        <div class="headertitulo">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Logo de la pagina" class="logo-icono">                
+            </a>
+            <h1>WikiGeek</h1>
+         </div>
+         <!-- para que el usuario pueda iniciar sesion o registrarse -->
+         <div class="sesion">
+             <a href="login.html" class="btn-login">Iniciar Sesión</a>
+             <a href="registrar.html" class="btn-registrar">Registrarse</a>
+         </div>
+        <!--usamos una clase buscar, para buscar las series y peliculas  -->
+            <div class="buscar">
+                <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
+            </div> 
+        <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+            <nav class="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="#proximamente">Próximamente</a></li>
+                    <li><a href="#peliculas">Sugerencias</a></li>
+                    <li><a href="milista.html">Mi lista</a></li>
+                </ul>
+            </nav>       
+    </header> 
+            <!-- main, informacion de la pelicula, imagenes de las peliculas que se podran ver -->
+            <main>
+                <section id="poster" class="poster_grande">
+                    <figure id="poster-div" class="poster-contenido">
+                        <div id="imagen-fondo" class="poster-imagen"></div>
+                        <figcaption class="poster-info">
+                            <h2 id="poster-titulo">Cargando pelicula destacada...</h2>
+                            <p id="poster-sinopsis" class="sinopsis-poster">...</p>
+                            <div class="btn-poster">
+                                <a href="detalles.html" id="btn-detalles" class="btn-ver-detalles">Ver detalles</a>
+                                <button id="btn-milista" class="btn-agregarlista">+ Mi lista</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <!-- seccion de peliculas destacadas -->
+                <section id="peliculas" class="seccion-peliculas">
+                    <h2 class="titulo-seccion">Películas Destacadas</h2>
+                    <div id="contenedor-peliculas" class="grid-peliculas "></div>
+                </section>
+                     
+
+                <!-- seccion de ultimos estrenos -->
+                 <section id="estrenos">
+                    <h2 class="titulo-seccion">Últimos Estrenos</h2>
+                    <div id="contenedor-estrenos" class="grid-peliculas"></div>
+                </section>
+
+                <!-- seccion de proximamente -->
+                 <section id="proximamente">
+                    <h2 class="titulo-seccion">Próximamente</h2>
+                    <div id="contenedor-proximamente" class="grid-peliculas"></div>
+                </section>
+
+
+                 
+                    
+            </main>
+
+          <footer>
+            <nav aria-label="Enlaces de pie">
+                <ul>
+                     <li><a href="acercade.html" aria-current="page">Acerca de</a></li>
+                     <li><a href="leanomercadojosemartin@gmail.com">Contacto</a></li>
+                     <li><a href="https://www.instagram.com/katfipol">Instagram</a></li>
+                </ul>
+            </nav>
+                <p>© 2025 - Enciclopedia de películas de superhéroes</p>
+            </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

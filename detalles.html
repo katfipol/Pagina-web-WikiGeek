@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles - GeekMovie</title>
+      <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+      <!-- header principal, con el logo y titulo de nuestra pagina web --> 
+    <header class="header-principal">
+        <div class="headertitulo">
+            <a href="index.html" class="logo">
+                <img src="images/logo3-removebg-preview.png" alt="GeekMovies-Tu guia de cine de superhéroes" class="logo-icono">                
+            </a>
+            <h1>GeekMovies: Tu portal de superhéroes</h1>
+         </div>
+         <!-- para que el usuario pueda iniciar sesion o registrarse -->
+         <div class="sesion">
+             <a href="login.html" class="btn-login">Iniciar Sesión</a>
+             <a href="registrar.html" class="btn-registrar">Registrarse</a>
+         </div>
+        <!--usamos una clase buscar, para buscar las series y peliculas  -->
+            <div class="buscar">
+                <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
+            </div> 
+        <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+            <nav class="inicio" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="#proximamente">Próximamente</a></li>
+                    <li><a href="#peliculas-destacadas">Sugerencias</a></li>
+                    <li><a href="milista.html">Mi lista</a></li>
+                </ul>
+            </nav>       
+    </header> 
+    <main>
+    <article class="detalle-pelicula">
+      <div class="poster-detalle">
+        <img src="/images/avengers-endgame.jpg" alt="Avengers: Endgame">
+      </div>
+
+      <div class="info-detalle">
+        <span class="universo">Universo: Marvel Cinematic Universe</span>
+        <h1>Avengers: Endgame</h1>
+        <p><strong>Director:</strong> Anthony y Joe Russo</p>
+        <p><strong>Género:</strong> Acción, Aventura, Ciencia Ficción</p>
+        <p><strong>Fecha de estreno:</strong> 26 de abril, 2019</p>
+        <h2>Sinópsis</h2>
+        <p>Después de los eventos devastadores de Avengers: Infinity War, el universo está en ruinas, y los heroes que quedan tienen que salvar el universo</p>
+      </div>
+
+      <!-- Reparto -->
+        <section class="reparto">
+             <h2>Reparto Principal</h2>
+            <div class="grid-reparto">
+                 <figure class="actor">
+                  <img src="images/robert-downey.jpg" alt="Robert Downey Jr. como Iron Man">
+                 <figcaption><strong>Robert Downey Jr.</strong> como Iron Man</figcaption>
+            </figure>
+
+                <figure class="actor">
+                 <img src="images/chris-evans.jpg" alt="Chris Evans como Capitán América">
+                <figcaption><strong>Chris Evans</strong> como Capitán América</figcaption>
+            </figure>
+
+            <figure class="actor">
+                 <img src="images/mark-ruffalo.jpg" alt="Mark Ruffalo como Hulk">
+                <figcaption><strong>Mark Ruffalo</strong> como Hulk</figcaption>
+            </figure>
+            </div>
+        </section>
+      <!-- Plataformas -->
+      <section class="plataformas">
+        <h2>Disponible en</h2>
+        <div class="logos-plataformas">
+            <a href="https://www.disneyplus.com/es-pe?gclsrc=aw.ds&cid=DSS-Search-Google-21417664921-&s_kwcid=AL!8468!3!776805095407!e!!g!!172945346319-333755866029&gad_source=1&gad_campaignid=21417664921&gbraid=0AAAAACzWEUGsWNYUb1WgjxDqsFEeDP44Z&gclid=CjwKCAiA3L_JBhAlEiwAlcWO5_Uo3VspoCT_6v1nNBP_chnanCXKYsje4p4Sncd2xB5q4xT9v_rI1hoCJAIQAvD_BwE">
+                 <img src="/images/logodisney.png" alt="Disney+">
+            </a>    
+        </div>
+      </section>
+
+      <!-- Reseñas -->
+      <section class="reseñas">
+        <form id="form-reseña" class="form-reseña">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="puntuacion">Puntuación (1-10):</label>
+            <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" required>
+
+             <label for="comentario">Tu reseña:</label>
+                <textarea id="comentario" name="comentario" rows="3" required></textarea>
+
+                <button type="submit" class="btn-reseña">Enviar reseña</button>
+        </form>
+      </section>
+      <a href="index.html" class="btn-volver">← Volver al inicio</a>
+    </article>
+  </main>
+    
+      <footer>
+            <nav aria-label="Enlaces de pie">
+                <ul>
+                     <li><a href="acercade.html">Acerca de</a></li>
+                     <li><a href="mailto:leanomercadojosemartin@gmail.com">Contacto</a></li>
+                     <li><a href="https://www.instagram.com/katfipol">Instagram</a></li>
+                </ul>
+            </nav>
+                <p>© 2025 - Enciclopedia de películas de superhéroes</p>
+            </footer>
+             <script src="js/script.js"></script>
+</body>
+</html>

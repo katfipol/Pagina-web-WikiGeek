@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WikiGeek</title>
+    <title>GeekMovies</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
     <header class="header-principal">
         <div class="headertitulo">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="Logo de la pagina" class="logo-icono">                
+                <img src="images/logo3-removebg-preview.png" alt="GeekMovies-Tu guia de cine de superhéroes" class="logo-icono">                
             </a>
-            <h1>WikiGeek</h1>
+            <h1>GeekMovies: Tu portal de superhéroes</h1>
          </div>
          <!-- para que el usuario pueda iniciar sesion o registrarse -->
          <div class="sesion">
@@ -27,59 +27,172 @@
         <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
             <nav class="inicio" aria-label="Menu principal">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="peliculas.html">Películas</a></li>
                     <li><a href="#proximamente">Próximamente</a></li>
-                    <li><a href="#peliculas">Sugerencias</a></li>
+                    <li><a href="#peliculas-destacadas">Sugerencias</a></li>
                     <li><a href="milista.html">Mi lista</a></li>
                 </ul>
             </nav>       
     </header> 
             <!-- main, informacion de la pelicula, imagenes de las peliculas que se podran ver -->
             <main>
-                <section id="poster" class="poster_grande">
-                    <figure id="poster-div" class="poster-contenido">
-                        <div id="imagen-fondo" class="poster-imagen"></div>
+               <section id="poster" class="poster_grande">
+                  
+                  <div id="imagen-fondo" class="poster-imagen">
+                  <figure id="poster-div" class="poster-contenido">
+                    <img src="images/postergrande.jpg" alt="poster"> 
                         <figcaption class="poster-info">
-                            <h2 id="poster-titulo">Cargando pelicula destacada...</h2>
-                            <p id="poster-sinopsis" class="sinopsis-poster">...</p>
                             <div class="btn-poster">
                                 <a href="detalles.html" id="btn-detalles" class="btn-ver-detalles">Ver detalles</a>
                                 <button id="btn-milista" class="btn-agregarlista">+ Mi lista</button>
                             </div>
                         </figcaption>
                     </figure>
+                    </div>
                 </section>
 
                 <!-- seccion de peliculas destacadas -->
-                <section id="peliculas" class="seccion-peliculas">
+                <section id="peliculas-destacadas" class="seccion-peliculas">
                     <h2 class="titulo-seccion">Películas Destacadas</h2>
-                    <div id="contenedor-peliculas" class="grid-peliculas "></div>
+
+                    <div id="contenedor-peliculas" class="grid-peliculas ">
+                         <figure class="tarjeta-pelicula">
+                        <img src="images/avengers-endgame.jpg" alt="Avengers: Endgame">
+                        <figcaption>Avengers: Endgame</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>         
+
+                         <figure class="tarjeta-pelicula">
+                        <img src="images/no-way-home.jpg" alt="No way home">
+                        <figcaption>Spiderman: No way home</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                       <figure class="tarjeta-pelicula">
+                        <img src="images/madame-web.jpg" alt="Madame Web">
+                        <figcaption>Madame Web</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                       <figure class="tarjeta-pelicula">
+                        <img src="images/superman.jpg" alt="Superman">
+                        <figcaption>Superman: Man of steel</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                    <figure class="tarjeta-pelicula">
+                        <img src="images/wonder-woman.jpg" alt="Wonder Woman">
+                        <figcaption>Wonder Woman</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                     <figure class="tarjeta-pelicula">
+                        <img src="images/the-dark-knight.jpg" alt="The Dark Knight">
+                        <figcaption>The Dark Knight</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+                        </div>
                 </section>
+                
+                   
                      
 
                 <!-- seccion de ultimos estrenos -->
-                 <section id="estrenos">
+                 <section id="estrenos" class="seccion-peliculas">
                     <h2 class="titulo-seccion">Últimos Estrenos</h2>
-                    <div id="contenedor-estrenos" class="grid-peliculas"></div>
+                    <div id="contenedor-estrenos" class="grid-peliculas">
+                          <figure class="tarjeta-pelicula">
+                        <img src="images/superman-2025.jpg" alt="Superman">
+                        <figcaption>Superman</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/joker-dos.jpg" alt="Joker II">
+                        <figcaption>Joker II</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/aquaman.jpg" alt="Aquaman">
+                        <figcaption>Aquaman</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/the-marvels.jpg" alt="The Marvels">
+                        <figcaption>The Marvels</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/deadpool.jpg" alt="deadpool">
+                        <figcaption>Deadpool</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/kraven.jpg" alt="Kraven">
+                        <figcaption>Kraven</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta" aria-label="Me gusta">❤</button>
+                    </figure>
+                    </div>
+                    
                 </section>
 
                 <!-- seccion de proximamente -->
                  <section id="proximamente">
                     <h2 class="titulo-seccion">Próximamente</h2>
                     <div id="contenedor-proximamente" class="grid-peliculas"></div>
-                </section>
 
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/bat2.jpg" alt="The Batman II">
+                        <figcaption>The Batman</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta">❤</button>
+                    </figure>
 
-                 
                     
-            </main>
+                      <figure class="tarjeta-pelicula">
+                        <img src="images/superman_legacy.jpg" alt="Superman Legacy">
+                        <figcaption>Superman II</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta">❤</button>
+                    </figure>
 
+                    <figure class="tarjeta-pelicula">
+                        <img src="images/blade.jpg" alt="Blade">
+                        <figcaption>Blade</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta">❤</button>
+                    </figure>
+                    <figure class="tarjeta-pelicula">
+                        <img src="images/supergirl-official-teaser-poster.jpg" alt="Supergirl">
+                        <figcaption>Supergirl</figcaption>
+                        <button class="btn-pelicula">Mi lista</button>
+                        <button class="btn-megusta">❤</button>
+                    </figure>
+
+                </section>       
+            </main>
           <footer>
             <nav aria-label="Enlaces de pie">
                 <ul>
-                     <li><a href="acercade.html" aria-current="page">Acerca de</a></li>
-                     <li><a href="leanomercadojosemartin@gmail.com">Contacto</a></li>
+                     <li><a href="acercade.html">Acerca de</a></li>
+                     <li><a href="mailto:leanomercadojosemartin@gmail.com">Contacto</a></li>
                      <li><a href="https://www.instagram.com/katfipol">Instagram</a></li>
                 </ul>
             </nav>

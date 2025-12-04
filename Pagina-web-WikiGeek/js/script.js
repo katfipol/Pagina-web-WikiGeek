@@ -1,5 +1,4 @@
-/* 
-    const API_KEY = "8ee58b07"; 
+const API_KEY = "8ee58b07"; 
 const buscador = document.getElementById("buscador");
 
 const contenedorDestacadas = document.getElementById("contenedor-peliculas");
@@ -40,8 +39,7 @@ const proximamente = [
     "The Batman Part II",
     "Captain America: Brave New World",
     "Thunderbolts",
-    "Avengers: Secret Wars",
-    "Supergirl: Woman of Tomorrow"
+    "Avengers: Secret Wars"
 ];
 
 // Inicialización
@@ -202,5 +200,3 @@ function buscarPeliculas(titulo) {
         .catch(err => console.error("Error en búsqueda:", err));
 }
 
-
-  */
