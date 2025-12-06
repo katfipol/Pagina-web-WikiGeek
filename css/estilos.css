@@ -1138,6 +1138,130 @@ footer p {
     font-size: 0.9rem;
   }
 }
+main article {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+main article header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+main article header h2 {
+  font-size: 2.5rem;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main article header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main article section {
+  margin-bottom: 2.5rem;
+  padding: 1.8rem;
+  background: rgba(26, 26, 26, 0.6);
+  border-radius: 16px;
+  border-left: 4px solid var(--color-primario);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main article section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  background: rgba(26, 26, 26, 0.7);
+}
+
+main article section h3 {
+  font-size: 1.8rem;
+  color: var(--color-primario);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main article section h3::before {
+  content: "✦";
+  color: var(--color-primario);
+  font-size: 1.4rem;
+}
+
+main article section p,
+main article section ol {
+  color: #ddd;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+main article section ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+main article section ol li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+main article section ol li::before {
+  content: "✓";
+  color: var(--color-primario);
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+  font-size: 1.2rem;
+}
+
+main article a {
+  color: var(--color-primario);
+  text-decoration: underline;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+main article a:hover {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  main article {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  main article header h2 {
+    font-size: 2rem;
+  }
+
+  main article header p {
+    font-size: 1rem;
+  }
+
+  main article section {
+    padding: 1.4rem;
+  }
+
+  main article section h3 {
+    font-size: 1.5rem;
+  }
+
+  main article section p,
+  main article section ol {
+    font-size: 0.95rem;
+  }
+}
 
 
                     

@@ -13,7 +13,7 @@
             <a href="index.html" class="logo">
                 <img src="images/logo3-removebg-preview.png" alt="Logo de la pagina" class="logo-icono">                
             </a>
-            <h1>GeekMovies: Tu portal de superhéroes</h1>
+            <h1>GeekMovies: Tu portal de superhéroesWikiGeek</h1>
          </div>
          <!-- para que el usuario pueda iniciar sesion o registrarse -->
          <div class="sesion">
@@ -25,7 +25,7 @@
                 <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
             </div> 
         <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
-          <div id="menu-hamburguesa">
+           <div id="menu-hamburguesa">
           <span></span>
           <span></span>
           <span></span>
@@ -40,42 +40,202 @@
                 </ul>
             </nav>  
     </header>
+
             <main>
-                   <div class="div-filtros"></div>
                <section class="filtros">
-                <h2>Catálogo de Películas</h2>
-            
-                
-               <form class="form-filtros">
-                    <label for="año">Año</label>
-                    <select id="año">
-                        <option value="todos">Todos</option>
-                        <option value="2000">2000</option>
-                        <option value="2010">2010</option>
-                        <option value="2020">2020</option>
-                    </select>
+      <h2 class="titulo-seccion">Catálogo de Películas</h2>
+      
+      <form class="form-filtros">
+        <div>
+          <label for="año">Año</label>
+          <select id="año">
+            <option value="todos">Todos</option>
+            <option value="2008">2008</option>
+            <option value="2013">2013</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
 
-                    <label for="universo">Universo</label>
-                     <select id="universo">
-                        <option value="todos">Todos</option>
-                        <option value="marvel">Marvel</option>
-                        <option value="dc">Dc comics</option>
-                    </select>
+        <div>
+          <label for="universo">Universo</label>
+          <select id="universo">
+            <option value="todos">Todos</option>
+            <option value="marvel">Marvel</option>
+            <option value="dc">Dc comics</option>
+          </select>
+        </div>
 
-                     <label for="categoria">Categoria</label>
-                     <select id="categoria">
-                        <option value="todos">Todos</option>
-                        <option value="series">Series</option>
-                        <option value="peliculas">Películas</option>
-                    </select>
-                </form>
-                </div> 
-                </section>
+        <div>
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option value="todos">Todos</option>
+            <option value="peliculas">Películas</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
 
                 <!-- seccion de listado de peliculas -->
                 <section id="listado-peliculas" class="lista-peliculas">
-                    <h2 class="titulo-listado">Listado de Películas</h2>
-                    <div id="contenedor-listado" class="grid-listado"></div>
+                    <h2 class="titulo-listado">Listados de Películas</h2>
+                    <div id="contenedor-listado" class="grid-listado">
+                         <!-- Películas Destacadas -->
+        <figure class="tarjeta-pelicula" data-año="2019" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/avengers-endgame.jpg" alt="Avengers: Endgame">
+          <figcaption>Avengers: Endgame</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2021" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/no-way-home.jpg" alt="Spiderman: No Way Home">
+          <figcaption>Spiderman: No Way Home</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2024" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/madame-web.jpg" alt="Madame Web">
+          <figcaption>Madame Web</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2013" data-universo="dc" data-categoria="peliculas">
+          <img src="images/superman.jpg" alt="Superman: Man of Steel">
+          <figcaption>Superman: Man of Steel</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2017" data-universo="dc" data-categoria="peliculas">
+          <img src="images/wonder-woman.jpg" alt="Wonder Woman">
+          <figcaption>Wonder Woman</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2008" data-universo="dc" data-categoria="peliculas">
+          <img src="images/the-dark-knight.jpg" alt="The Dark Knight">
+          <figcaption>The Dark Knight</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <!-- Últimos Estrenos -->
+        <figure class="tarjeta-pelicula" data-año="2025" data-universo="dc" data-categoria="peliculas">
+          <img src="images/superman-2025.jpg" alt="Superman">
+          <figcaption>Superman</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2024" data-universo="dc" data-categoria="peliculas">
+          <img src="images/joker-dos.jpg" alt="Joker II">
+          <figcaption>Joker II</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2018" data-universo="dc" data-categoria="peliculas">
+          <img src="images/aquaman.jpg" alt="Aquaman">
+          <figcaption>Aquaman</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2023" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/the-marvels.jpg" alt="The Marvels">
+          <figcaption>The Marvels</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2016" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/deadpool.jpg" alt="Deadpool">
+          <figcaption>Deadpool</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2024" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/kraven.jpg" alt="Kraven">
+          <figcaption>Kraven</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <!-- Próximamente -->
+        <figure class="tarjeta-pelicula" data-año="2022" data-universo="dc" data-categoria="peliculas">
+          <img src="images/bat2.jpg" alt="The Batman II">
+          <figcaption>The Batman</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2025" data-universo="dc" data-categoria="peliculas">
+          <img src="images/superman_legacy.jpg" alt="Superman Legacy">
+          <figcaption>Superman II</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2025" data-universo="marvel" data-categoria="peliculas">
+          <img src="images/blade.jpg" alt="Blade">
+          <figcaption>Blade</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+        <figure class="tarjeta-pelicula" data-año="2025" data-universo="dc" data-categoria="peliculas">
+          <img src="images/supergirl-official-teaser-poster.jpg" alt="Supergirl">
+          <figcaption>Supergirl</figcaption>
+          <div class="botones-pelicula">
+            <button class="btn-pelicula">Mi lista</button>
+            <button class="btn-megusta" aria-label="Me gusta">❤</button>
+          </div>
+        </figure>
+
+                    </div>
                 </section>
             </main>
 
@@ -84,8 +244,8 @@
    <footer>
     <nav aria-label="Enlaces de pie">
       <ul>
-        <li><a href="acercade.html" aria-current="page">Acerca de</a></li>
-        <li><a href="mailto:leanomercadojosemartin@gmail.com">Contacto</a></li>
+        <li><a href="acerca.html" aria-current="page">Acerca de</a></li>
+        <li><a href="leanomercadojosemartin@gmail.com">Contacto</a></li>
         <li><a href="https://www.instagram.com/katfipol">Instagram</a></li>
       </ul>
     </nav>
