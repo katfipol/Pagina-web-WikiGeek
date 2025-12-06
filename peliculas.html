@@ -25,6 +25,11 @@
                 <input type="search" id="buscador" class="btn-buscar" placeholder="Buscar series, películas...">          
             </div> 
         <!-- para que el usuario pueda navegar entre las diferentes ventanas de html -->
+          <div id="menu-hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+          </div>
             <nav class="inicio" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -36,9 +41,12 @@
             </nav>  
     </header>
             <main>
+                   <div class="div-filtros"></div>
                <section class="filtros">
                 <h2>Catálogo de Películas</h2>
-                <form class="form-filtros">
+            
+                
+               <form class="form-filtros">
                     <label for="año">Año</label>
                     <select id="año">
                         <option value="todos">Todos</option>
@@ -61,6 +69,7 @@
                         <option value="peliculas">Películas</option>
                     </select>
                 </form>
+                </div> 
                 </section>
 
                 <!-- seccion de listado de peliculas -->
