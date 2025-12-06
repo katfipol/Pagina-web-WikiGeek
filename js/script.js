@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (menuHamburguesa && sesion && inicio) {
     menuHamburguesa.addEventListener('click', function() {
-      // Toggle clase 'active' en el menú hamburguesa
+      
       this.classList.toggle('active');
       
       // Toggle visibilidad de los elementos móviles
@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function agregarAPelicula(e) {
-  // Detener comportamiento por defecto si es un <a>
-  if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A') {
     e.preventDefault();
   }
 
@@ -45,12 +44,12 @@ function agregarAPelicula(e) {
   // Guardar
   sessionStorage.setItem('miLista', JSON.stringify(miLista));
 
-  // Feedback visual
+  // Mensaje de q se añadio
   alert('¡Añadido a tu lista!');
 }
 
-// ========== EVENTOS ==========
-// Añadir a "Mi lista" desde cualquier página
+
+// Añade a "Mi lista" desde cualquier página
 document.querySelectorAll('.btn-pelicula, .btn-agregarlista').forEach(boton => {
   boton.addEventListener('click', agregarAPelicula);
 });

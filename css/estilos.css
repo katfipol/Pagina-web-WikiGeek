@@ -1074,7 +1074,7 @@ footer p {
 .form-filtros {
     gap: 0.8rem;
     padding: 0 1rem;
-    justify-content: center; /* 👈 Centrado perfecto */
+    justify-content: center; 
     flex-wrap: wrap; /* permite que bajen a otra línea si no caben */
   }
 
@@ -1092,13 +1092,13 @@ footer p {
   }
 
   .form-filtros select {
-    font-size: 16px; /* evita zoom en iOS */
+    font-size: 16px; 
     max-width: 130px; /* más compacto */
     width: 100%; /* ocupa el ancho de su contenedor */
     padding: 0.6rem 0.8rem;
     padding-right: 2.1rem;
     background-size: 12px;
-    text-align: center; /* opcional: centrar el texto del select */
+    text-align: center; /* centrar el texto del select */
   }
 
 
@@ -1213,7 +1213,11 @@ main article section ol li {
   margin-bottom: 0.8rem;
   position: relative;
 }
-
+main article section ol {
+  list-style-type: none; 
+  position: relative; 
+ 
+}
 main article section ol li::before {
   content: "✓";
   color: var(--color-primario);
@@ -1234,7 +1238,6 @@ main article a:hover {
   text-decoration-color: #fff;
 }
 
-/* Estilos para móviles */
 @media (max-width: 768px) {
   main article {
     margin: 2rem auto;
