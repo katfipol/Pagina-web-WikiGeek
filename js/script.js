@@ -128,3 +128,4 @@ document.getElementById('buscador')?.addEventListener('input', function() {
     tarjeta.style.display = titulo.includes(termino) ? 'block' : 'none';
   });
 });
+
