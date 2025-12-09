@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       this.classList.toggle('active');
       
-      // Toggle visibilidad de los elementos móviles
+      // menu hamburguesa, visibilidad de los elementos móviles
       sesion.classList.toggle('active');
       inicio.classList.toggle('visible');
     });
