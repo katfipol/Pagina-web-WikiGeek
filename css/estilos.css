@@ -473,7 +473,9 @@ h2::before {
   cursor: pointer;
   transform: scale(1);
   animation: fadeInScale 0.5s ease forwards;
-  /* Sin width ni max-width: el grid lo controla */
+  width: 100%;
+  max-width: 180px; /* ← ancho máximo consistente */
+  margin: 0 auto; /* ← centra si el contenedor es más ancho */
 }
 
 @keyframes fadeInScale {
@@ -521,76 +523,238 @@ h2::before {
 }
 
 /* === DETALLES === */
+/* === AJUSTES PARA LA PÁGINA DE DETALLES === */
+
+/* Contenedor principal */
 .detalle-pelicula {
   display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 3rem;
-  padding: 3rem;
-  max-width: 1400px;
+  grid-template-columns: 350px 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  max-width: 1200px;
   margin: 0 auto;
   animation: fadeInUp 0.6s ease;
 }
 
-.poster-detalle img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease;
+/* Información principal */
+.info-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
-.poster-detalle img:hover {
-  transform: scale(1.02);
+.info-detalle .universo {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.15);
+  color: var(--color-primario);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  align-self: flex-start;
 }
 
 .info-detalle h1 {
-  font-size: 2.8rem;
-  margin: 0 0 1.5rem 0;
+  font-size: 2.4rem;
+  margin: 0;
   color: var(--color-primario);
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.info-detalle p {
+  margin: 0;
+  line-height: 1.7;
+  color: #ddd;
 }
 
 .info-detalle h2 {
   font-size: 1.6rem;
-  margin: 2rem 0 1rem 0;
   color: var(--color-primario);
+  margin: 0;
 }
 
-.info-detalle p {
-  margin-bottom: 1.2rem;
-  line-height: 1.8;
+/* === SECCIÓN: Disponible en === */
+/* === SECCIÓN: Plataformas === */
+.plataformas {
+  grid-column: 1 / -1;
+  padding: 1.2rem 3rem;
+  text-align: center;
+}
+
+.plataformas h2 {
+  font-size: 1.1rem;
+  color: var(--color-primario);
+  margin: 0 0 0.6rem;
+  font-weight: bold;
+}
+
+/* Si usas texto en lugar de logo (recomendado para Perú) */
+.plataformas p {
+  max-width: 450px;            /* ← más estrecho */
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Si mantienes el logo */
+.logos-plataformas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 300px;            /* ← limita el ancho del contenedor del logo */
+  margin: 0.6rem auto 0;
+}
+
+.logos-plataformas img {
+  height: 28px;
+  width: auto;
+  opacity: 0.85;
+  filter: grayscale(100%);
+  border-radius: 4px;
+}
+
+.logos-plataformas img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* === SECCIÓN: Reseñas === */
+.reseñas {
+  grid-column: 1 / -1;
+  padding: 0 3rem 2rem;
+  text-align: center;
+}
+
+.form-reseña {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; /* ← clave: centra el formulario */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.form-reseña label {
+  font-weight: bold;
+  color: var(--color-primario);
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.form-reseña input,
+.form-reseña textarea {
+  width: 100%;
+  max-width: 380px; /* evita que se expandan demasiado */
+  padding: 0.75rem 1rem;
+  border: 1px solid #444;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.form-reseña input::placeholder,
+.form-reseña textarea::placeholder {
+  text-align: center;
+  color: #777;
+}
+
+.form-reseña textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-reseña {
+  margin-top: 0.3rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  width: auto;
+}
+
+/* === SECCIÓN: Reparto === */
+.reparto {
+  grid-column: 1 / -1;
+  padding: 1.8rem 3rem;
+  text-align: center;
+}
+
+.reparto h2 {
+  font-size: 1.5rem;
+  color: var(--color-primario);
+  margin-bottom: 1.4rem;
 }
 
 .grid-reparto {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;     /* ← centra el grupo de actores */
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  max-width: 900px;            /* ← limita el ancho máximo */
+  margin: 0 auto;              /* ← centra el contenedor */
+}
+
+.grid-reparto .actor {
+  flex: 0 0 120px;             /* ← ancho fijo, evita estiramientos */
+  text-align: center;
+}
+
+.grid-reparto .actor img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .actor {
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
 .actor:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .actor img {
   width: 100%;
-  height: 300px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .actor figcaption {
-  font-size: 0.95rem;
-  text-align: center;
-  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  color: #ccc;
   font-weight: 500;
 }
 
+/* === Responsive: móvil === */
+@media (max-width: 768px) {
+  .logos-plataformas img {
+    height: 50px;
+  }
+
+  .grid-reparto {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .actor img {
+    height: 170px;
+  }
+}
 .logos-plataformas {
   display: flex;
   gap: 1.5rem;
@@ -966,13 +1130,7 @@ main article a:hover {
   text-decoration-color: #fff;
 }
 
-/* ======================================== */
-/*            MEDIA QUERIES
-/* ======================================== */
 
-/* === TABLET (769px – 1024px) === */
-/* === TABLET (769px – 1024px) === */
-/* === TABLET (769px – 1024px) === */
 @media (min-width: 769px) and (max-width: 1024px) {
   .header-principal {
     grid-template-columns: 1fr;     /* una sola columna */
@@ -1229,7 +1387,7 @@ main article a:hover {
     margin: 2.2rem 1.5rem 1.6rem;
   }
 }
-/* === ESCRITORIO PEQUEÑO: búsqueda abajo (1025px – 1200px) === */
+/*  (1025px – 1200px) */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .header-principal {
     grid-template-columns: 1fr;
@@ -1293,7 +1451,7 @@ main article a:hover {
   }
 }
 
-/* === MÓVIL PEQUEÑO (≤ 480px) === */
+/*  (≤ 480px) */
 @media (max-width: 480px) {
   .header-principal {
     padding: 1rem;
@@ -1346,4 +1504,8 @@ main article a:hover {
   .sinopsis-poster {
     font-size: 1rem;
   }
+}
+.titulo-seccion {
+  scroll-margin-top: 200px;
+  margin-top: 2.5rem;
 }
