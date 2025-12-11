@@ -1509,3 +1509,53 @@ main article a:hover {
   scroll-margin-top: 200px;
   margin-top: 2.5rem;
 }
+.lista-reseñas {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.reseña-item {
+  background: rgba(30, 30, 30, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-primario);
+}
+
+.reseña-item .nombre {
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.reseña-item .puntuacion {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.reseña-item .comentario {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+.tooltip-sinopsis {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.92);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  max-width: 300px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  z-index: 2000;
+  pointer-events: none; /* para que no interfiera con el hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+   transform: translate(-50%, -50%); /* ← clave para centrado preciso */
+}
+
+.tooltip-sinopsis.visible {
+  opacity: 1;
+  visibility: visible;
+}
