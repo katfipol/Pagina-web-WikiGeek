@@ -454,13 +454,12 @@ h2::before {
   margin-bottom: 4rem;
 }
 
-.grid-peliculas,
-.grid-listado {
+.grid-peliculas {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
   padding: 0 3rem 3rem;
-  justify-items: center; /* ← centra tarjetas cuando hay pocas */
+  justify-content: center; /* ← clave para eliminar hueco a la derecha */
 }
 
 .tarjeta-pelicula {
@@ -474,6 +473,7 @@ h2::before {
   cursor: pointer;
   transform: scale(1);
   animation: fadeInScale 0.5s ease forwards;
+  /* Sin width ni max-width: el grid lo controla */
 }
 
 @keyframes fadeInScale {
